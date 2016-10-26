@@ -49,6 +49,11 @@ Usage
     # If path doesn't exist Class = None
 
 
+Live demo
+---------
+
+See it in action here: https://repl.it/EGdS/0
+
 Credits
 -------
 
