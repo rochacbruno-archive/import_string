@@ -1,3 +1,15 @@
+DEPRECATED don't use it. Please do::
+
+    import importlib
+    foopath = 'src.apis.foo.Foo'
+
+    module_name = '.'.join(foopath.split('.')[:-1]) # to get src.apis.foo
+    foo_module = importlib.import_module(module_name)
+    clazz_name = foopath.split('.')[-1] # to get Foo
+    Foo = getattr(module_name, clazz_name)
+    print Foo()
+
+
 =============
 import_string
 =============
